@@ -1,1 +1,0 @@
-{"mappings":"YAAAA,SAASC,KAAKC,MAAMC,gBAAkB,UAGtCC,QAAQC,IAAK,SAAaC,OADb","sources":["src/app.js"],"sourcesContent":["document.body.style.backgroundColor = '#239412';\n\nconst name = 'world';\nconsole.log(`Hello ${name}`);"],"names":["document","body","style","backgroundColor","console","log","concat"],"version":3,"file":"index.77880129.js.map"}
