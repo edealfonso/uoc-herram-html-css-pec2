@@ -1,0 +1,22 @@
+h1 {
+    color: hotpink;
+    font-family: cursive;
+  }
+
+  body{
+    background-color:black;
+  }
+
+  ::placeholder {
+    color: gray;
+  }
+  
+  body {
+    height: 100vh;
+    color: #1f1f1f;
+    background: linear-gradient(to bottom, #bada55, #c0ffee);
+  }
+
+  .logo {
+    background: image-set(url(img/logo.png) 2x, url(img/logo.png) 1x);
+  }

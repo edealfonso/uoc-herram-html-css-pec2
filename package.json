@@ -1,0 +1,25 @@
+{
+  "name": "uoc-actividad-parcel",
+  "version": "1.0.0",
+  "description": "Actividad sobre Parcel de la asignatura \"Herramientas HTML y CSS\"",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "author": "Elsa de Alfonso",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.4.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "tailwindcss": "^3.0.23"
+  }
+}
