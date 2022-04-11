@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+/* principal containers */ 
+
 html {
   font-size: clamp(15px, 2vw, 30px);
   background: white;
 }
 
 body {
-  min-height: 100vh;
   color: #1f1f1f;
   background: linear-gradient(to bottom, #bada55, #c0ffee);
   font-family: 'Karla';
 
+  min-height: 100vh;
   margin: 0;
   padding: max(5vw, 1rem);
 }
@@ -20,12 +22,13 @@ main {
   margin: 0 auto;
 }
 
+/* titles and links styling */ 
+
 h1, .volver a {
   color: hotpink;
   font-family: cursive;
   transition: color 0.5s ease;
 }
-
 
 a {  
   text-decoration: none;
@@ -44,6 +47,15 @@ a:hover h1, a:active h1, a:focus h1 {
   color: rgb(135, 200, 228);
 }
 
+.template-listings p.subtitle {
+  text-align: center;
+  max-width: 60%;
+  font-weight: bold;
+  margin: 1em auto 4em auto ;
+  display: block;
+}
+
+/* vertical spacing */ 
 
 p, ul, blockquote {
   margin: 4em 0;
@@ -54,7 +66,7 @@ p:first-of-type {
 }
 
 figure {
-  margin: 3.5em 0 4.5em 0;
+  margin: 3em 0 4.5em 0;
 }
 
 h1 {
@@ -65,14 +77,11 @@ h2, h3 {
   margin: 2em 0 1em 0;
 }
 
-figure, img, blockquote {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: auto;
-  max-height: 50vw;
+.volver {
+  margin: 3em 0 0.5em 0;
 }
+
+/* paragraphs */ 
 
 p {
   max-width: max(60%, 250px);
@@ -86,8 +95,15 @@ p:nth-of-type(2n) {
   text-align: right;
 }
 
-.volver {
-  margin: 3em 0 0.5em 0;
+/* content blocks */ 
+
+figure, img, blockquote {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: auto;
+  max-height: 50vw;
 }
 
 figcaption {
@@ -138,7 +154,39 @@ iframe {
   height: 50vw;
 }
 
+/* adjustments for particular cases */ 
+
 .template-listings p,
-.template-listings ul {
+.template-listings ul,
+.listado-obras {
   margin: 2em 0;
+}
+
+/* creación de la jaula */ 
+
+#cage {
+  width: 100%;
+  height: 80vw;
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0 auto 8vw auto;
+  border: 1px solid white;
+  overflow: hidden;
+  position: relative;
+  cursor: help;
+}
+
+#cage:hover {
+  border-color: transparent;
+  background-color:rgba(255,255,255, 0.1)
+}
+
+#title{
+  opacity: 0;
+  position: absolute;
+  display: block;
+  width: max-content;
+}
+#cage:hover #title{
+  opacity: 1;
 }
