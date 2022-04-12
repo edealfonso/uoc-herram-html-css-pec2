@@ -62,7 +62,7 @@ window.onload = (event) => {
     setTimeout(() => {
         AOS.init({
             duration: 500,
-            once: true
+            // once: true
         });
     }, 100);
 
