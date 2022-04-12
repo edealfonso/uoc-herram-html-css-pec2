@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Actividad sobre Parcel de la asignatura \"Herramientas HTML y CSS\"",
   "source": "src/index.html",
-  "browserslist": "cover 99.5%, dead",
+  "browserslist": "cover 95%, IE 9, dead",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
@@ -14,6 +14,7 @@
   "author": "Elsa de Alfonso",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@parcel/transformer-sass": "^2.4.1",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.4.1",
