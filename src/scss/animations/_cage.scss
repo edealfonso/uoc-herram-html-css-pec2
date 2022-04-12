@@ -6,11 +6,11 @@
     max-width: 800px;
     max-height: 600px;
     margin: 0 auto 8vw auto;
-    border: 1px solid white;
+    border: 10px solid white;
     overflow: hidden;
     position: relative;
     cursor: help;
-    transition: background-color 0.7s ease;
+    transition: border-width 0.7s ease;
 
     #title{
         position: absolute;
@@ -19,18 +19,19 @@
         transform: translate(-50%, -50%);
         top : 50%;
         left: 50%;
+        padding-bottom: 20px; // compensate border (x2)
 
         color: white;
-        transition: none;
+        transition: all 0.5s ease-in-out;
     }
 }
   
 #cage:hover {
-    border-color: transparent;
-    background-color:rgba(255,255,255, 0.15);
+    border-width: 30px;
 
     #title{
         color: hotpink;
-        transition: color 0.7s ease;
+        transition: color 0.7s ease, padding-bottom 0.7s ease;
+        padding-bottom: 60px; // compensate thicker border (x2)
     }
 }

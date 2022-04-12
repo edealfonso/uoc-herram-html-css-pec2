@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // AOS prepare
 
     // childs of main that are not secitons / articles
-    const items = document.querySelectorAll('main > *:not(.volver):not(section):not(article)');
+    const items = document.querySelectorAll('main > *:not(section):not(article):not(.volver)');
     [].forEach.call(items, (item) => { item.setAttribute('data-aos','fade-in') })
 
     // childs of sections 
