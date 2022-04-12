@@ -1,0 +1,21 @@
+/* adjustments for particular cases */ 
+
+.template-listings {
+
+    p.subtitle {
+        text-align: center;
+        max-width: 60%;
+        font-weight: bold;
+        margin: 1em auto 4em auto ;
+        display: block;
+    }
+
+    p, ul {
+        margin: 2em 0;
+    }
+}
+ 
+
+.listado-obras {
+    margin: 2em 0;
+}

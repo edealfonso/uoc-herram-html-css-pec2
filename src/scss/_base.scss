@@ -1,0 +1,160 @@
+/* principal containers */ 
+
+html {
+    font-size: clamp(15px, 2vw, 30px);
+    background: linear-gradient(to bottom, #bada55, #c0ffee);
+}
+
+body {
+    color: #1f1f1f;
+    font-family: 'Karla';
+
+    min-height: 100vh;
+    margin: 0;
+    padding: max(5vw, 1rem);
+
+    transition: opacity 0.3 ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* titles and links styling */ 
+
+h1, .volver a {
+    color: hotpink;
+    font-family: cursive;
+    transition: color 0.5s ease;
+}
+
+a {  
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+p a, li a, p a:visited, li a:visited {  
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover, a:active, a:focus,
+p a:hover, p a:active, p a:focus,
+li a:hover, li a:active, li a:focus,
+a:hover h1, a:active h1, a:focus h1 {
+    color: rgb(135, 200, 228);
+}
+
+/* vertical spacing */ 
+
+p, ul, blockquote {
+    margin: 4em 0;
+}
+
+p:first-of-type {
+    margin-top: 0;
+}
+
+figure {
+    margin: 3em 0 4.5em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2, h3 {
+    margin: 2em 0 1em 0;
+}
+
+.volver {
+    margin: 3em 0 0.5em 0;
+}
+
+/* paragraphs */ 
+
+p {
+    max-width: max(60%, 250px);
+    margin-left: 0;
+    margin-right: auto;
+}
+
+p:nth-of-type(2n) {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+/* content blocks */ 
+
+figure, img, blockquote {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-height: 60vh;
+    width: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: -0.015em;
+    margin-top: 0.5em;
+}
+
+// quotes
+
+blockquote {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 1.2em;
+    border-radius: 20px;
+    text-align: center;
+
+    .q {
+        font-weight: 500;
+        font-size: 1.5em;
+        position: relative;
+        letter-spacing: -0.01em;
+    }
+
+    .q::before, .q::after {
+        font-weight: bold;
+        font-family: 'Times New Roman', serif;
+        margin: 0 0.1em;
+    }
+
+    .q::before { content: '“'; }
+    .q::after { content: '”'; }
+
+    cite {
+        display: block;
+        margin-top: 1em;
+    }
+}
+
+// Iframes
+
+.iframe-figure {
+    position: relative;
+    display: block;
+    height: 55vw;
+
+    iframe {
+        width: 100%;
+        display: block;
+        height: 50vw;
+    }
+    
+}
