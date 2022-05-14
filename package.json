@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Actividad sobre Parcel de la asignatura \"Herramientas HTML y CSS\"",
   "source": "src/index.html",
-  "browserslist": "cover 95%, dead",
+  "browserslist": "cover 95%",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
