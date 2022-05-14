@@ -1,19 +1,23 @@
 /* principal containers */ 
 
 html {
-    font-size: clamp(15px, 2vw, 30px);
+    font-size: clamp(18px, 2vw, 28px);
     background: linear-gradient(to bottom, #bada55, #c0ffee);
 }
 
 body {
-    color: #1f1f1f;
+    color: $black;
     font-family: 'Karla';
 
     min-height: 100vh;
     margin: 0;
-    padding: max(5vw, 1rem);
 
     transition: opacity 0.3 ease;
+}
+
+main {
+    padding: $d-padding;
+
 }
 
 .hidden {
@@ -29,7 +33,7 @@ main {
 /* titles and links styling */ 
 
 h1, .volver a {
-    color: hotpink;
+    color: $pink;
     font-family: cursive;
     transition: color 0.5s ease;
 }
@@ -49,7 +53,7 @@ a:hover, a:active, a:focus,
 p a:hover, p a:active, p a:focus,
 li a:hover, li a:active, li a:focus,
 a:hover h1, a:active h1, a:focus h1 {
-    color: rgb(135, 200, 228);
+    color: $blue;
 }
 
 /* vertical spacing */ 
@@ -70,8 +74,12 @@ h1 {
     margin: 0;
 }
 
-h2, h3 {
-    margin: 2em 0 1em 0;
+h2 {
+        margin: 0 0 1em 0;
+}
+
+h3 {
+        margin: 2em 0 1em 0;
 }
 
 .volver {
@@ -102,8 +110,31 @@ figure, img, blockquote {
 }
 
 img {
-    max-height: 60vh;
+    // max-height: 60vh;
     width: auto;
+}
+
+.normal-img {
+    width: 800px;
+    @media #{$media-laptop} { width: 700px; }
+    @media #{$media-tablet} { width: 600px; }
+    @media #{$media-mobile} { width: 500px; }
+    @media #{$media-mobile-sm} { width: 400px; }
+}
+
+img.portrait-img {
+    width: 340px;
+    height: auto;
+}
+
+.cover-img {
+    border: 1px solid white;
+    outline: 20px solid #fff;
+    margin: 20px auto;
+}
+
+.cover-img.white {
+    border: 1px solid black;
 }
 
 figcaption {

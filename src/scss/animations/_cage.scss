@@ -9,7 +9,7 @@
     border: 10px solid white;
     overflow: hidden;
     position: relative;
-    cursor: help;
+    cursor: none;
     transition: border-width 0.7s ease;
 
     #title{
@@ -22,6 +22,7 @@
         padding-bottom: 20px; // compensate border (x2)
 
         color: white;
+        font-size: 100px;
         transition: all 0.5s ease-in-out;
     }
 }
@@ -30,7 +31,7 @@
     border-width: 30px;
 
     #title{
-        color: hotpink;
+        color: $pink;
         transition: color 0.7s ease, padding-bottom 0.7s ease;
         padding-bottom: 60px; // compensate thicker border (x2)
     }

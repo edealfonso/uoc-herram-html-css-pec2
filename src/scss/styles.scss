@@ -4,8 +4,17 @@
 // Reset
 @import "reset";
 
-// Base
+// Vars + Base
+@import "vars";
 @import "base";
+
+// Pages
+@import "pages/home";
+@import "pages/single-obra";
+
+// Sections
+@import "sections/header";
+@import "sections/footer";
 
 // Special cases
 @import "special";

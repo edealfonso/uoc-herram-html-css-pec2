@@ -8,12 +8,40 @@
   </head>
   <body>
 
-    <!-- MAIN CONTENT -->
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__wrapper" href="/">
+        <div class="header__wrapper__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g>
+              <rect stroke="hotpink" stroke-width="8" height="64" width="92" y="30" x="4" fill="none"></rect>
+              <text font-family="cursive" font-size="94" y="66" x="39" fill="#ffffff">?</text>
+            </g>
+          </svg>
+        </div>
+        <h1 class="header__wrapper__title">¿Cómo salir de Cage?</h1>
+    </a>
+    </header>
+
+    <!-- MAIN -->
     <main>
       <section>
           
-        <a href="../index.html"><h1>¿Cómo salir de Cage?</h1></a>
-        <h2><i>Water Walk</i></h2>
+        <div class="obra-cover">
+          <h2><i>Water Walk</i></h2>
+
+          <!-- cambio de resolución - ancho fijo -->
+          <picture>
+            <source srcset="../img/thumb-water.png?as=webp&width=340
+                            ../img/thumb-water.png?as=webp&width=680 2x"
+                    type="image/webp" />
+            <source srcset="../img/thumb-water.png?width=340
+                            ../img/thumb-water.png?width=680 2x"
+                    type="image/png" />
+            <img class="cover-img white" src="../img/thumb-water.png?width=340" 
+            alt="John Cage, Water Walk.png, Chrisfred3, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons" />
+          </picture>
+        </div>
 
         <p>Con esta obra, John Cage trae todo el riesgo y el vanguardismo de su obra al gran público, ya que esta pieza se estrenó en el popular programa de televisión estadounidense <i>I've Got a Secret</i>, en 1960.</p>
         
@@ -49,11 +77,21 @@
           <li><a href="as-slow-as-possible.html"><i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i></a></li>
         </ul>
 
-        <div class="volver">
-          <a href="../index.html">Volver a la home</a>
-        </div>
-
       </nav>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <h3 class="footer__nav__title">Mapa del sitio web</h3>
+        <ul class="footer__nav__ul">
+            <li><a href="/">Home</a></li>
+            <li><a href="../obras.html">Obras</a></li>
+            <li><a href="../presentacion.html">Presentación</a></li>
+            <li><a href="../enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </footer>
+
   </body>
 </html>

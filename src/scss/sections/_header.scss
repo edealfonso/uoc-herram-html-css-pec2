@@ -1,0 +1,53 @@
+.header {
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem $d-padding;
+    
+        min-height: 7rem;
+
+        background: $black;
+    
+        &__logo {
+            width: 3rem;
+            margin-right: $d-padding;
+
+            svg rect {
+                transition: stroke 0.2s ease;
+            }
+            svg text {
+                transition: fill 0.2s ease;
+            }
+        }
+    }
+ 
+    a:hover, a:focus, a:active {
+        
+        svg rect {
+            stroke: $blue;
+        }
+        svg text {
+            fill: $blue;
+        }
+    }
+}
+
+@media #{$media-mobile} {
+
+    .header {
+        &__wrapper {
+            display: block;
+
+            &__logo {
+                margin: 0 auto 1rem;
+            }
+
+            &__title {
+                font-size: 1.7rem;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@ let jaula = document.getElementById('cage');
 let titulo = document.getElementById('title');
 
 function updateDisplay(e) {
-    titulo.style.left = `${e.pageX - jaula.offsetLeft }px`;
+    titulo.style.left = `${e.pageX - jaula.offsetLeft - 25}px`;
     titulo.style.top = `${e.pageY - jaula.offsetTop }px`;
 }
 

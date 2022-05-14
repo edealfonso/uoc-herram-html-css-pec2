@@ -8,16 +8,68 @@
   </head>
   <body>
 
-    <!-- MAIN CONTENT -->
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__wrapper" href="/">
+        <div class="header__wrapper__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g>
+              <rect stroke="hotpink" stroke-width="8" height="64" width="92" y="30" x="4" fill="none"></rect>
+              <text font-family="cursive" font-size="94" y="66" x="39" fill="#ffffff">?</text>
+            </g>
+          </svg>
+        </div>
+        <h1 class="header__wrapper__title">¿Cómo salir de Cage?</h1>
+    </a>
+    </header>
+
+    <!-- MAIN -->
     <main>
 
-      <a href="index.html"><h1>¿Cómo salir de Cage?</h1></a>
       <h2>Presentación del sitio web</h2>
 
       <p>Esta página es un pequeño ejercicio de investigación y documentación de algunas de las obras que más nos han interpelado de la trayectoria de John Cage, músico, artista y filósofo estadounidense.</p>
 
       <figure>
-        <a title="Rob Bogaerts / Anefo, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Opdracht_GPD_componist_John_Cage_,_kop,_Bestanddeelnr_934-2728.jpg"><img width="1024" alt="Opdracht GPD componist John Cage , kop, Bestanddeelnr 934-2728" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Opdracht_GPD_componist_John_Cage_%2C_kop%2C_Bestanddeelnr_934-2728.jpg/1024px-Opdracht_GPD_componist_John_Cage_%2C_kop%2C_Bestanddeelnr_934-2728.jpg"></a>
+        <a title="Rob Bogaerts / Anefo, CC0, via Wikimedia Commons" 
+           href="https://commons.wikimedia.org/wiki/File:Opdracht_GPD_componist_John_Cage_,_kop,_Bestanddeelnr_934-2728.jpg">
+
+          <!-- escalado - ancho variable -->
+          <picture>
+
+            <source srcset="img/portrait.jpeg?as=webp&width=400 400
+                            img/portrait.jpeg?as=webp&width=500 500
+                            img/portrait.jpeg?as=webp&width=600 600
+                            img/portrait.jpeg?as=webp&width=700 700
+                            img/portrait.jpeg?as=webp&width=800 800"
+
+                    sizes="(max-width: 480px) 400px, 
+                           (max-width: 768px) 500px, 
+                           (max-width: 1024px) 600px, 
+                           (max-width: 1440px) 700px, 
+                           800px"
+
+                    type="image/webp" />
+
+            <source srcset="img/portrait.jpeg?width=400 400
+                            img/portrait.jpeg?width=500 500
+                            img/portrait.jpeg?width=600 600
+                            img/portrait.jpeg?width=700 700
+                            img/portrait.jpeg?width=800 800"
+
+                    sizes="(max-width: 480px) 400px, 
+                          (max-width: 768px) 500px, 
+                          (max-width: 1024px) 600px, 
+                          (max-width: 1440px) 700px, 
+                          800px"
+
+                    type="image/jpeg" />
+
+            <img class="normal-img" src="img/portrait.jpeg?width=800" alt="Opdracht GPD componist John Cage , kop, Bestanddeelnr 934-2728" />
+
+          </picture>
+
+        </a>
 
         <figcaption>Retrato de John Cage en 1988</figcaption>
       </figure>
@@ -29,9 +81,20 @@
 
       <p>El detonante de esta curiosidad por el personaje de John Cage y sus ideas viene del documental <a href="https://www.imdb.com/title/tt5923548/" target="_blank"><i>How To Get Out Of Cage</i></a>, que se ha distribuído con fines didácticos en <a href="https://www.youtube.com/watch?v=UaNGeuDuXl4" target="_blank">Youtube</a>.</p>
 
-      <div class="volver">
-        <a href="index.html">Volver a la home</a>
-      </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <h3 class="footer__nav__title">Mapa del sitio web</h3>
+        <ul class="footer__nav__ul">
+            <li><a href="/">Home</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="presentacion.html">Presentación</a></li>
+            <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </footer>
+
   </body>
 </html>

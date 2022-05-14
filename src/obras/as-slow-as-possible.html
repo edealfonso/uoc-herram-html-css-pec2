@@ -8,17 +8,82 @@
   </head>
   <body>
 
-    <!-- MAIN CONTENT -->
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__wrapper" href="/">
+        <div class="header__wrapper__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g>
+              <rect stroke="hotpink" stroke-width="8" height="64" width="92" y="30" x="4" fill="none"></rect>
+              <text font-family="cursive" font-size="94" y="66" x="39" fill="#ffffff">?</text>
+            </g>
+          </svg>
+        </div>
+        <h1 class="header__wrapper__title">¿Cómo salir de Cage?</h1>
+    </a>
+    </header>
+
+    <!-- MAIN -->
     <main>
       <section>
-        <a href="../index.html"><h1>¿Cómo salir de Cage?</h1></a>
-        <h2><i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i></h2>
+        <div class="obra-cover">
+          <h2><i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i></h2>
+
+          <!-- cambio de resolución - ancho fijo -->
+          <picture>
+            <source srcset="../img/thumb-organ.png?as=webp&width=340
+                            ../img/thumb-organ.png?as=webp&width=680 2x"
+                    type="image/webp" />
+            <source srcset="../img/thumb-organ.png?width=340
+                            ../img/thumb-organ.png?width=680 2x"
+                    type="image/png" />
+            <img class="cover-img" src="../img/thumb-organ.png?width=340" 
+            alt="John Cage Orgel Kloster St. Burchardi Halberstadt.jpg, Clemensfranz, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons" />
+          </picture>
+        </div>
 
         <p>La pieza <i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i>, es una composición que hizo Cage especialmente para un órgano que está en la iglesia de St. Burchardi del pueblo de Halberstadt, situado en la Alta Sajonia alemana.</p>
 
         <figure>
 
-          <a title="JanManu, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Br%C3%BCcheDerGeschichte-JohannPeterHinz-Halberstadt.jpg"><img alt="BrücheDerGeschichte-JohannPeterHinz-Halberstadt" src="../img/BrücheDerGeschichte-JohannPeterHinz-Halberstadt.jpeg"></a>
+          <a title="JanManu, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Br%C3%BCcheDerGeschichte-JohannPeterHinz-Halberstadt.jpg">
+
+            <!-- escalado - ancho variable -->
+            <picture>
+
+              <source srcset="../img/church.jpeg?as=webp&width=400 400
+                              ../img/church.jpeg?as=webp&width=500 500
+                              ../img/church.jpeg?as=webp&width=600 600
+                              ../img/church.jpeg?as=webp&width=700 700
+                              ../img/church.jpeg?as=webp&width=800 800"
+
+                      sizes="(max-width: 480px) 400px, 
+                            (max-width: 768px) 500px, 
+                            (max-width: 1024px) 600px, 
+                            (max-width: 1440px) 700px, 
+                            800px"
+
+                      type="image/webp" />
+
+              <source srcset="../img/church.jpeg?width=400 400
+                              ../img/church.jpeg?width=500 500
+                              ../img/church.jpeg?width=600 600
+                              ../img/church.jpeg?width=700 700
+                              ../img/church.jpeg?width=800 800"
+
+                      sizes="(max-width: 480px) 400px, 
+                            (max-width: 768px) 500px, 
+                            (max-width: 1024px) 600px, 
+                            (max-width: 1440px) 700px, 
+                            800px"
+
+                      type="image/jpeg" />
+
+              <img class="normal-img" src="../img/church.jpeg?width=800" 
+                   alt="BrücheDerGeschichte-JohannPeterHinz-Halberstadt" />
+
+            </picture>
+          </a>
 
           <figcaption>Iglesia de St. Burchardi</figcaption>
         </figure>
@@ -27,7 +92,44 @@
         
         <figure>
 
-          <a title="Akiramifune, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:ORGAN%C2%B2ASLSP_Pedale.jpg"><img width="512" alt="ORGAN²ASLSP Pedale" src="../img/1024px-ORGAN²ASLSP_Pedale.jpeg"></a>
+          <a title="Akiramifune, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:ORGAN%C2%B2ASLSP_Pedale.jpg">
+
+            <!-- escalado - ancho variable -->
+            <picture>
+
+              <source srcset="../img/organ.jpeg?as=webp&width=400 400
+                              ../img/organ.jpeg?as=webp&width=500 500
+                              ../img/organ.jpeg?as=webp&width=600 600
+                              ../img/organ.jpeg?as=webp&width=700 700
+                              ../img/organ.jpeg?as=webp&width=800 800"
+
+                      sizes="(max-width: 480px) 400px, 
+                            (max-width: 768px) 500px, 
+                            (max-width: 1024px) 600px, 
+                            (max-width: 1440px) 700px, 
+                            800px"
+
+                      type="image/webp" />
+
+              <source srcset="../img/organ.jpeg?width=400 400
+                              ../img/organ.jpeg?width=500 500
+                              ../img/organ.jpeg?width=600 600
+                              ../img/organ.jpeg?width=700 700
+                              ../img/organ.jpeg?width=800 800"
+
+                      sizes="(max-width: 480px) 400px, 
+                            (max-width: 768px) 500px, 
+                            (max-width: 1024px) 600px, 
+                            (max-width: 1440px) 700px, 
+                            800px"
+
+                      type="image/jpeg" />
+
+              <img class="normal-img" src="../img/organ.jpeg?width=800" 
+                   alt="ORGAN²ASLSP Pedale" />
+
+            </picture>
+          </a>
 
           <figcaption>Órgano que interpreta <i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i></figcaption>
         </figure>
@@ -49,12 +151,21 @@
           <li><a href="water-walk.html"><i>Water Walk</i></a></li>
         </ul>
 
-        <div class="volver">
-          <a href="../index.html">Volver a la home</a>
-        </div>
-
       </nav>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <h3 class="footer__nav__title">Mapa del sitio web</h3>
+        <ul class="footer__nav__ul">
+            <li><a href="/">Home</a></li>
+            <li><a href="../obras.html">Obras</a></li>
+            <li><a href="../presentacion.html">Presentación</a></li>
+            <li><a href="../enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </footer>
 
   </body>
 </html>

@@ -1,0 +1,38 @@
+.template-home {
+
+    p.intro {
+        text-align: center;
+        max-width: 60%;
+        font-weight: bold;
+        margin: 1em auto;
+        display: block;
+    }
+
+    .wrapper {
+        &__clip {
+            width: 290px;
+            height: 290px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background: linear-gradient(to bottom, $blue 30%, transparent 100%);
+            margin: 0 auto 3rem auto;
+    
+            img {
+                display: block;
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                max-height: unset;
+                opacity: 0.5;
+            }
+    
+            transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+
+        }
+
+        &:hover .wrapper__clip{
+            transform: scale(0) rotate(-360deg);
+        }
+    }
+
+}

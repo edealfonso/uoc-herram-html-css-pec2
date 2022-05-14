@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8"/>
     <title>¿Cómo salir de Cage? | Home</title>
@@ -7,20 +7,63 @@
     <script type="module" src="app.js"></script>
   </head>
   <body>
-    <main class="template-listings">
-      
-      <div id="cage"><h1 id="title">¿Cómo salir de Cage?</h1></div>
-      <p class="subtitle">Bienvenidos este sitio sobre el músico John&nbsp;Cage</p>
 
-      <!-- NAV -->
-      <nav>
-        <h3>Mapa del sitio web</h3>
-        <ul>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__wrapper" href="/">
+        <div class="header__wrapper__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g>
+              <rect stroke="hotpink" stroke-width="8" height="64" width="92" y="30" x="4" fill="none"></rect>
+              <text font-family="cursive" font-size="94" y="66" x="39" fill="#ffffff">?</text>
+            </g>
+          </svg>
+        </div>
+        <h1 class="header__wrapper__title">¿Cómo salir de Cage?</h1>
+    </a>
+    </header>
+
+    <!-- MAIN -->
+    <main class="template-home">
+      <div id="cage"><h1 id="title">?</h1></div>
+      <p class="intro">Bienvenidos este sitio sobre el músico John&nbsp;Cage</p>
+
+      <div class="wrapper">
+        <div class="wrapper__clip">
+ 
+          <!-- cambio de resolución - ancho fijo -->
+          <picture>
+
+            <source srcset="img/portrait-crop.jpg?as=webp&width=290
+                            img/portrait-crop.jpg?as=webp&width=580 2x"
+                    type="image/webp" />
+
+            <source srcset="img/portrait-crop.jpg?width=290
+                            img/portrait-crop.jpg?width=580 2x"
+                    type="image/jpeg" />
+
+            <img class="normal-img" src="img/portrait-crop.jpg?width=290" 
+                 alt="Opdracht GPD componist John Cage , kop, Bestanddeelnr 934-2728" />
+
+          </picture>
+               
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <h3 class="footer__nav__title">Mapa del sitio web</h3>
+        <ul class="footer__nav__ul">
+            <li><a href="/">Home</a></li>
             <li><a href="obras.html">Obras</a></li>
             <li><a href="presentacion.html">Presentación</a></li>
             <li><a href="enlaces.html">Enlaces</a></li>
         </ul>
       </nav>
-    </main>
+    </footer>
+
   </body>
 </html>

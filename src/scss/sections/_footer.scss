@@ -1,0 +1,70 @@
+.footer {
+
+    background-color: $black;
+    color: white;
+    min-height: 7rem;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        padding: $d-padding;
+        justify-content: center;
+
+        &__title {
+            margin: 0 $d-padding 0 0;
+            color: $pink;
+
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content:'';
+                background-image: url('../img/arrow-right.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                height: 1.5rem;
+                margin-left: $d-padding;
+
+
+                display: inline-block;
+                opacity: 0;
+                transition: opacity 0.6s ease;
+                padding-left: $d-padding;
+
+            }
+        }
+
+        &__ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            > * {
+                padding-right: $d-padding;
+            }
+        }
+    }
+
+    &__nav:hover .footer__nav__title::after {
+        opacity: 1;
+    }
+
+
+}
+@media #{$media-mobile} {
+
+    .footer {
+        &__nav {
+            display: block;
+            margin-bottom: 2rem;
+
+            &__ul {
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+}

@@ -8,19 +8,90 @@
   </head>
   <body>
 
-    <!-- MAIN CONTENT -->
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__wrapper" href="/">
+        <div class="header__wrapper__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g>
+              <rect stroke="hotpink" stroke-width="8" height="64" width="92" y="30" x="4" fill="none"></rect>
+              <text font-family="cursive" font-size="94" y="66" x="39" fill="#ffffff">?</text>
+            </g>
+          </svg>
+        </div>
+        <h1 class="header__wrapper__title">¿Cómo salir de Cage?</h1>
+    </a>
+    </header>
+
+    <!-- MAIN -->
     <main>
 
       <section>
-        <a href="../index.html"><h1>¿Cómo salir de Cage?</h1></a>
-        <h2><i>4'33"</i></h2>
+
+        <div class="obra-cover">
+          <h2><i>4'33"</i></h2>
+
+          <!-- cambio de resolución - ancho fijo -->
+          <picture>
+            <source srcset="../img/thumb-433.png?as=webp&width=340
+                            ../img/thumb-433.png?as=webp&width=680 2x"
+                    type="image/webp" />
+            <source srcset="../img/thumb-433.png?width=340
+                            ../img/thumb-433.png?width=680 2x"
+                    type="image/png" />
+            <img class="cover-img" src="../img/thumb-433.png?width=340" 
+            alt="P1280601 Tirez sur le pianiste (12041370203).jpg, Thorsten Krienke from Detmold, Germany, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" />
+          </picture>
+        </div>
 
         <p><i>4'33"</i> es la obra más conocida y controvertida de John Cage, que le ha consagrado como figura imprescindible de la vanguardia musical del siglo XX. Se trata de una pieza musical de tres movimientos, y de una duración de cuatro minutos con trenta y tres segundos, donde la partitura está vacía, y sólo se oye silencio.</p>
         
         <p>John Cage, con toda su sabiduría sobre la música y sus indagaciones absolutamente complejas, decide renunciar a todo y sumirnos en el silencio, revolucionando asi por completo el significado de la pieza musical y de la labor del músico.</p>
 
         <figure>
-            <a title="Thorsten Krienke from Detmold, Germany, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:P1280598_Tirez_sur_le_pianiste_(12041357503).jpg"><img alt="P1280598 Tirez sur le pianiste (12041357503)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/P1280598_Tirez_sur_le_pianiste_%2812041357503%29.jpg/1024px-P1280598_Tirez_sur_le_pianiste_%2812041357503%29.jpg"></a>
+            <a title="Thorsten Krienke from Detmold, Germany, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" 
+               href="https://commons.wikimedia.org/wiki/File:P1280598_Tirez_sur_le_pianiste_(12041357503).jpg">
+               
+              <!-- direccion de arte + ESCALADO -->
+
+              <picture>
+
+                <source media="(max-width: 768px)"
+                        srcset="../img/pianist1.jpeg?as=webp&width=400 400
+                                ../img/pianist1.jpeg?as=webp&width=500 500"
+                        sizes="(max-width: 480px) 400px, 
+                                500px"
+                        type="image/webp" />
+
+                <source media="(max-width: 768px)"
+                        srcset="../img/pianist1.jpeg?width=400 400
+                                ../img/pianist1.jpeg?width=500 500"
+                        sizes="(max-width: 480px) 400px, 
+                                500px"
+                        type="image/jpeg" />
+  
+                <source media="(min-width: 769px)"
+                        srcset="../img/pianist1.jpeg?as=webp&width=600 600
+                                ../img/pianist1.jpeg?as=webp&width=700 700
+                                ../img/pianist1.jpeg?as=webp&width=800 800"
+                        sizes="(max-width: 1024px) 600px, 
+                              (max-width: 1440px) 700px, 
+                              800px"
+                        type="image/webp" />
+
+                <source media="(min-width: 769px)"
+                        srcset="../img/pianist1.jpeg?width=600 600
+                                ../img/pianist1.jpeg?width=700 700
+                                ../img/pianist1.jpeg?width=800 800"
+                        sizes="(max-width: 1024px) 600px, 
+                              (max-width: 1440px) 700px, 
+                              800px"
+                        type="image/jpeg" />
+  
+                <img class="normal-img" src="../img/pianist1.jpeg?width=800" 
+                      alt="P1280598 Tirez sur le pianiste (12041357503)" />
+              </picture>
+            </a>
 
             <figcaption>Pianista interpretando la pieza <i>4'33"</i></figcaption>
         </figure>
@@ -30,7 +101,24 @@
         <p>Este hito del arte contemporáneo ha sido ampliamente homenajeado, como por ejemplo por la marca de instrumentos electrónicos Moog, que anunció el lanzamiento ficticio de un módulo analógico con el que podías introducir 4 minutos y 33 segundos de silencio a cualquier cadena de audio conectada a él.</p>
 
         <figure>
-          <a title="Horowizard, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Moogerfooger_4%2733%CA%BA.jpg"><img alt="Moogerfooger 4&#039;33ʺ" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Moogerfooger_4%2733%CA%BA.jpg"></a>
+          <a title="Horowizard, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Moogerfooger_4%2733%CA%BA.jpg">
+
+            <!-- cambio de resolución - ancho fijo -->
+            <picture>
+            
+              <source srcset="../img/moogerfooger.jpeg?as=webp&width=340
+                              ../img/moogerfooger.jpeg?as=webp&width=680 2x"
+                      type="image/webp" />
+  
+              <source srcset="../img/moogerfooger.jpeg?width=340
+                              ../img/moogerfooger.jpeg?width=680 2x"
+                      type="image/jpeg" />
+  
+              <img class="normal-img portrait-img" src="../img/moogerfooger.jpeg?width=340" 
+              alt="Moogerfooger" />
+  
+            </picture>
+          </a>
 
           <figcaption>Homenaje al <i>4'33"</i> por Moog</figcaption>
         </figure>
@@ -50,13 +138,22 @@
           <li><a href="as-slow-as-possible.html"><i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i></a></li>
         </ul>
 
-        <div class="volver">
-          <a href="../index.html">Volver a la home</a>
-        </div>
-
       </nav>
 
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <h3 class="footer__nav__title">Mapa del sitio web</h3>
+        <ul class="footer__nav__ul">
+            <li><a href="/">Home</a></li>
+            <li><a href="../obras.html">Obras</a></li>
+            <li><a href="../presentacion.html">Presentación</a></li>
+            <li><a href="../enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </footer>
 
   </body>
 </html>
