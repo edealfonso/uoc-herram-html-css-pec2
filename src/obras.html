@@ -27,12 +27,87 @@
     <main class="template-obras">
       <h2>Listado de obras</h2>
         <p>Estas son las obras y creaciones que hemos seleccionado para esta investigación.</p>
-        <ul>
-            <li><a href="obras/4-33.html"><i>4'33"</i></a></li>
-            <li><a href="obras/music-of-changes.html"><i>Music of Changes</i></a></li>
-            <li><a href="obras/piano-preparado.html">Piano preaparado</a></li>
-            <li><a href="obras/water-walk.html"><i>Water Walk</i></a></li>
-            <li><a href="obras/as-slow-as-possible.html"><i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i></a></li>
+        <ul class="thumbnail-grid">
+            <li>
+              <a href="obras/4-33.html">
+                <h2><i>4'33"</i></h2>
+                <!-- cambio de resolución - ancho fijo -->
+                <picture>
+                  <source srcset="img/thumb-433.png?as=webp&width=340
+                                  img/thumb-433.png?as=webp&width=680 2x"
+                          type="image/webp" />
+                  <source srcset="img/thumb-433.png?width=340
+                                  img/thumb-433.png?width=680 2x"
+                          type="image/png" />
+                  <img class="cover-img" src="img/thumb-433.png?width=340" 
+                  alt="P1280601 Tirez sur le pianiste (12041370203).jpg, Thorsten Krienke from Detmold, Germany, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" />
+                </picture>
+              </a>
+            </li>
+            <li>
+              <a href="obras/music-of-changes.html">
+                <h2><i>Music of Changes</i></h2>
+                <!-- cambio de resolución - ancho fijo -->
+                <picture>
+                  <source srcset="img/thumb-chances.png?as=webp&width=340
+                                  img/thumb-chances.png?as=webp&width=680 2x"
+                          type="image/webp" />
+                  <source srcset="img/thumb-chances.png?width=340
+                                  img/thumb-chances.png?width=680 2x"
+                          type="image/png" />
+                  <img class="cover-img" src="img/thumb-chances.png?width=340" 
+                  alt="I Ching Song Dynasty print.jpg, Song era print artist, Public domain, via Wikimedia Commons" />
+                </picture>
+              </a>
+            </li>
+            <li>
+              <a href="obras/piano-preparado.html">
+                <h2>Piano preaparado</h2>
+                <!-- cambio de resolución - ancho fijo -->
+                <picture>
+                  <source srcset="img/thumb-piano.png?as=webp&width=340
+                                  img/thumb-piano.png?as=webp&width=680 2x"
+                          type="image/webp" />
+                  <source srcset="img/thumb-piano.png?width=340
+                                  img/thumb-piano.png?width=680 2x"
+                          type="image/png" />
+                  <img class="cover-img" src="img/thumb-piano.png?width=340" 
+                  alt="No Triangle's Prepared Piano, Non-Event, Goethe-Institut, Boston, 2009-02-01.jpg, Non Event, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons" />
+                </picture>
+              </a>
+            </li>
+            <li>
+              <a href="obras/water-walk.html">
+                <h2><i>Water Walk</i></h2>
+                <!-- cambio de resolución - ancho fijo -->
+                <picture>
+                  <source srcset="img/thumb-water.png?as=webp&width=340
+                                  img/thumb-water.png?as=webp&width=680 2x"
+                          type="image/webp" />
+                  <source srcset="img/thumb-water.png?width=340
+                                  img/thumb-water.png?width=680 2x"
+                          type="image/png" />
+                  <img class="cover-img white" src="img/thumb-water.png?width=340" 
+                  alt="John Cage, Water Walk.png, Chrisfred3, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons" />
+                </picture>
+              </a>
+            </li>
+            <li>
+              <a href="obras/as-slow-as-possible.html">
+                <h2><i>Organ<sup>2</sup>/ASLSP (As SLow aS Possible)</i></h2>
+                <!-- cambio de resolución - ancho fijo -->
+                <picture>
+                  <source srcset="img/thumb-organ.png?as=webp&width=340
+                                  img/thumb-organ.png?as=webp&width=680 2x"
+                          type="image/webp" />
+                  <source srcset="img/thumb-organ.png?width=340
+                                  img/thumb-organ.png?width=680 2x"
+                          type="image/png" />
+                  <img class="cover-img" src="img/thumb-organ.png?width=340" 
+                  alt="John Cage Orgel Kloster St. Burchardi Halberstadt.jpg, Clemensfranz, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons" />
+                </picture>
+              </a>
+            </li>
         </ul>
 
     </main>
