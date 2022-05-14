@@ -12,8 +12,6 @@
 
     svg {
         rect {
-            // transition: stroke 0.2s ease;
-            // stroke: $blue;
             fill-opacity: 0;
             fill: $blue;
             animation: expand 2s ease, 
@@ -23,12 +21,6 @@
                        draw-3 2s ease 3s forwards;
 
         }
-        text {
-            // transition: fill 0.2s ease;
-            // fill: $blue;
-
-        }
-
     }
 
     @keyframes expand {
@@ -62,14 +54,10 @@
         }        
         to {
             stroke-dasharray: -45 270;
-            // stroke-width: 0;
         }
     }
 
-    @keyframes draw-3 {  
-        // from {
-        //     stroke-dasharray: 45 0;
-        // }        
+    @keyframes draw-3 {        
         to {
             stroke-dasharray: 45 0;
             stroke-width: 5;
