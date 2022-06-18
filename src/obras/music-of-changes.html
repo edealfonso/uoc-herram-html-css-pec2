@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>¿Cómo salir de Cage? | Obras | Music of Changes</title>
-    <link rel="stylesheet" href="../scss/styles.scss" />
+    <link rel="stylesheet" href="../scss/styles.scss" media="print" onload="this.media='all'">
     <script type="module" src="../app.js" defer></script>
   </head>
   <body>
@@ -32,10 +32,10 @@
 
           <!-- cambio de resolución - ancho fijo -->
           <picture>
-            <source srcset="../img/thumb-chances.png?as=webp&width=340
+            <source srcset="../img/thumb-chances.png?as=webp&width=340 1x,
                             ../img/thumb-chances.png?as=webp&width=680 2x"
                     type="image/webp" />
-            <source srcset="../img/thumb-chances.png?width=340
+            <source srcset="../img/thumb-chances.png?width=340 1x,
                             ../img/thumb-chances.png?width=680 2x"
                     type="image/png" />
             <img loading="lazy" class="cover-img" src="../img/thumb-chances.png?width=340" 

@@ -10,11 +10,11 @@
     margin-bottom: 5rem;
 }
 
-.normal-img {
+img.normal-img {
 
     &--433-pianist {
 
-        // aspect ratio 16/9 (art direction screens 800px+)
+        // aspect ratio 16/9 ( art direction big screens )
         width: 800px;
         @include autoheight( calc(16/9) , 800px );
         
@@ -27,11 +27,7 @@
             @include autoheight( calc(16/9) , 600px );
         }
 
-        // aspect ratio 1996/1891 (art direction screens <800px)
-        @media only screen and (max-width : 799px) {
-            width: 600px; 
-            @include autoheight( calc(1996/1891) , 600px );
-        }
+        // aspect ratio 1996/1891 (art direction screens mobile)
         @media #{$media-mobile} { 
             width: 500px; 
             @include autoheight( calc(1996/1891) , 500px );
@@ -44,10 +40,6 @@
             width: calc(100v - 30px); 
             @include autoheight( calc(1996/1891) , calc(100vw - 30px) );
         }
-    }
-    &--433-moogerfooger {
-        // aspect ratio 340∶519
-        @include autoheight-normalimg( calc(340/519) );
     }
     &--aslsp-church {
         // aspect ratio 800∶773

@@ -5,13 +5,18 @@
         gap: 60px;
 
         @media #{$media-mobile} { 
-            grid-template-columns: calc(100% - 40px);
+            grid-template-columns: calc(100vw - 70px);
+            justify-content: center;
         }
 
         list-style: none;
         padding: 0;
         .cover-img {
             margin-left: 20px;
+            @media #{$media-mobile} { 
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
         li a {

@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>¿Cómo salir de Cage? | Home</title>
-    <link rel="stylesheet" href="scss/styles.scss" />
+    <link rel="stylesheet" href="scss/styles.scss" media="print" onload="this.media='all'">
     <script type="module" src="app.js" defer></script>
   </head>
   <body>
@@ -35,11 +35,11 @@
           <!-- cambio de resolución - ancho fijo -->
           <picture>
 
-            <source srcset="img/portrait-crop.jpg?as=webp&width=290
+            <source srcset="img/portrait-crop.jpg?as=webp&width=290 1x,
                             img/portrait-crop.jpg?as=webp&width=580 2x"
                     type="image/webp" />
 
-            <source srcset="img/portrait-crop.jpg?width=290
+            <source srcset="img/portrait-crop.jpg?width=290 1x,
                             img/portrait-crop.jpg?width=580 2x"
                     type="image/jpeg" />
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>¿Cómo salir de Cage? | Obras | Water Walk</title>
-    <link rel="stylesheet" href="../scss/styles.scss" />
+    <link rel="stylesheet" href="../scss/styles.scss" media="print" onload="this.media='all'">
     <script type="module" src="../app.js" defer></script>
   </head>
   <body>
@@ -33,14 +33,19 @@
 
           <!-- cambio de resolución - ancho fijo -->
           <picture>
-            <source srcset="../img/thumb-water.png?as=webp&width=340
+            <source srcset="../img/thumb-water.png?as=webp&width=340 1x,
                             ../img/thumb-water.png?as=webp&width=680 2x"
                     type="image/webp" />
-            <source srcset="../img/thumb-water.png?width=340
+            <source srcset="../img/thumb-water.png?width=340,
                             ../img/thumb-water.png?width=680 2x"
                     type="image/png" />
-            <img loading="lazy" class="cover-img white" src="../img/thumb-water.png?width=340" 
-            alt="John Cage, Water Walk.png, Chrisfred3, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons" />
+            <img 
+              loading="lazy" 
+              class="cover-img white" 
+              src="../img/thumb-water.png?width=340" 
+              srcset="../img/thumb-water.png?width=340 1x, ../img/thumb-water.png?width=680 2x" 
+              alt="John Cage, Water Walk.png, Chrisfred3, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, 
+                via Wikimedia Commons" />
           </picture>
         </div>
 

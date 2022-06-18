@@ -123,8 +123,10 @@ img {
 }
 
 img.portrait-img {
-    width: 340px;
-    height: auto;
+    width: 290px;
+
+    // aspect ratio 340∶519
+    @include autoheight( calc(340/519) , 290px );
 }
 
 .cover-img {
@@ -136,8 +138,8 @@ img.portrait-img {
     height: 340px;
 
     @media only screen and (max-width : 440px) {
-        width: calc(100% - 40px);
-        height: calc(100% - 40px);
+        width: calc(100vw - 70px);
+        height: calc(100vw - 70px);
     }
 }
 
