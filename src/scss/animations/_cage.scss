@@ -20,7 +20,8 @@
         top : 50%;
         left: 50%;
         padding-bottom: 20px; // compensate border (x2)
-
+        padding-left: 20px; // compensate the &nbsp;, written to avoid a bug in display of Firefox
+        
         color: white;
         font-size: 100px;
         transition: all 0.5s ease-in-out;
