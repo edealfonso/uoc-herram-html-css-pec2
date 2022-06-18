@@ -6,12 +6,14 @@
 
 // Vars + Base
 @import "vars";
+@import "mixins";
 @import "base";
 
 // Pages
 @import "pages/home";
 @import "pages/single-obra";
 @import "pages/obras";
+@import "pages/presentacion";
 
 // Sections
 @import "sections/header";

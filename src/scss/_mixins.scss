@@ -1,0 +1,31 @@
+// Mixins
+@mixin autoheight($ratio, $width) {
+    height: calc( $width / $ratio );
+} 
+
+@mixin autoheight-normalimg($ratio) {
+    
+    // width: 800px;
+    @include autoheight( $ratio , 800px );
+    
+    @media #{$media-laptop} { 
+        // width: 700px; 
+        @include autoheight( $ratio , 700px );
+    }
+    @media #{$media-tablet} { 
+        // width: 600px; 
+        @include autoheight( $ratio , 600px );
+    }
+    @media #{$media-mobile} { 
+        // width: 500px; 
+        @include autoheight( $ratio , 500px );
+    }
+    @media #{$media-mobile-sm} {
+        // width: 400px; 
+        @include autoheight( $ratio , 400px );
+    }
+    @media only screen and (max-width : 430px) {
+        // width: calc(100v - 30px); 
+        @include autoheight( $ratio , calc(100vw - 30px) );
+    }
+} 

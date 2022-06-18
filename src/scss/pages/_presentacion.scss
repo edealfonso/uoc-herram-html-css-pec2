@@ -1,0 +1,6 @@
+.template-presentacion {
+    .normal-img {
+        // aspect ratio 800:531
+        @include autoheight-normalimg( 800/531 );
+    }
+}

@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>¿Cómo salir de Cage? | Obras | 4'33"</title>
     <link rel="stylesheet" href="../scss/styles.scss" />
-    <script type="module" src="../app.js"></script>
+    <script type="module" src="../app.js" defer></script>
   </head>
   <body>
 
@@ -39,8 +39,9 @@
             <source srcset="../img/thumb-433.png?width=340
                             ../img/thumb-433.png?width=680 2x"
                     type="image/png" />
-            <img class="cover-img" src="../img/thumb-433.png?width=340" 
-            alt="P1280601 Tirez sur le pianiste (12041370203).jpg, Thorsten Krienke from Detmold, Germany, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" />
+            <img loading="lazy" class="cover-img" src="../img/thumb-433.png?width=340" 
+              alt="P1280601 Tirez sur le pianiste (12041370203).jpg, Thorsten Krienke from Detmold, Germany, 
+                CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" />
           </picture>
         </div>
 
@@ -58,7 +59,7 @@
                 <source media="(max-width: 799px)" srcset="../img/pianist1-crop.jpg" type="image/jpeg">
                 <source media="(min-width: 800px)" srcset="../img/pianist1.jpeg?as=webp" type="image/webp">
                 <source media="(min-width: 800px)" srcset="../img/pianist1.jpeg" type="image/jpeg">
-                <img class="normal-img" src="../img/pianist1.jpeg" alt="P1280598 Tirez sur le pianiste (12041357503)">
+                <img loading="lazy" class="normal-img normal-img--433-pianist" src="../img/pianist1.jpeg" alt="P1280598 Tirez sur le pianiste (12041357503)">
               </picture>
             </a>
 
@@ -83,7 +84,7 @@
                               ../img/moogerfooger.jpeg?width=680 2x"
                       type="image/jpeg" />
   
-              <img class="normal-img portrait-img" src="../img/moogerfooger.jpeg?width=340" 
+              <img loading="lazy" class="normal-img portrait-img normal-img--433-moogerfooger" src="../img/moogerfooger.jpeg?width=340" 
               alt="Moogerfooger" />
   
             </picture>
