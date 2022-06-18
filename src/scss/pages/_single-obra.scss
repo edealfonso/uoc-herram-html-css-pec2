@@ -16,49 +16,49 @@
 
         // aspect ratio 16/9 (art direction screens 800px+)
         width: 800px;
-        @include autoheight( 16/9 , 800px );
+        @include autoheight( calc(16/9) , 800px );
         
         @media #{$media-laptop} { 
             width: 700px; 
-            @include autoheight( 16/9 , 700px );
+            @include autoheight( calc(16/9) , 700px );
         }
         @media #{$media-tablet} { 
             width: 600px; 
-            @include autoheight( 16/9 , 600px );
+            @include autoheight( calc(16/9) , 600px );
         }
 
         // aspect ratio 1996/1891 (art direction screens <800px)
         @media only screen and (max-width : 799px) {
             width: 600px; 
-            @include autoheight( 1996/1891 , 600px );
+            @include autoheight( calc(1996/1891) , 600px );
         }
         @media #{$media-mobile} { 
             width: 500px; 
-            @include autoheight( 1996/1891 , 500px );
+            @include autoheight( calc(1996/1891) , 500px );
         }
         @media #{$media-mobile-sm} {
             width: 400px; 
-            @include autoheight( 1996/1891 , 400px );
+            @include autoheight( calc(1996/1891) , 400px );
         }
         @media only screen and (max-width : 430px) {
             width: calc(100v - 30px); 
-            @include autoheight( 1996/1891 , calc(100vw - 30px) );
+            @include autoheight( calc(1996/1891) , calc(100vw - 30px) );
         }
     }
     &--433-moogerfooger {
         // aspect ratio 340∶519
-        @include autoheight-normalimg( 340/519 );
+        @include autoheight-normalimg( calc(340/519) );
     }
     &--aslsp-church {
         // aspect ratio 800∶773
-        @include autoheight-normalimg( 800/773 );
+        @include autoheight-normalimg( calc(800/773) );
     }
     &--aslsp-organ {
         // aspect ratio 4∶3
-        @include autoheight-normalimg( 4/3 );
+        @include autoheight-normalimg( calc(4/3) );
     }
     &--preparedpiano {
-        // aspect ratio 600∶397 800∶529
-        @include autoheight-normalimg( 800/529 );
+        // aspect ratio 800∶529
+        @include autoheight-normalimg( calc(800/529) );
     }
 }
