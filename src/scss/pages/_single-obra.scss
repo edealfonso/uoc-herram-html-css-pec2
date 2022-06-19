@@ -49,8 +49,12 @@ img.normal-img {
         // aspect ratio 4∶3
         @include autoheight-normalimg( calc(4/3) );
     }
-    &--preparedpiano {
+    &--perparedpiano {
         // aspect ratio 800∶529
         @include autoheight-normalimg( calc(800/529) );
+    }
+    &--changes-iching {
+        // aspect ratio 679∶676
+        @include autoheight-normalimg( calc(679/676) );
     }
 }
