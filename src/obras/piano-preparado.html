@@ -7,9 +7,6 @@
 
     <script type="module" src="../app.js"></script>
 
-    <!-- Optional, if we want the stylesheet to get preloaded. Note that this line causes stylesheet to get downloaded, but not applied to the page. Use strategically — while preloading will push this resource up the priority list, it may cause more important resources to be pushed down the priority list. This may not be the desired effect for non-critical CSS, depending on other resources your app needs. -->
-    <link rel="preload" href="../scss/styles.scss" as="style">
-
     <!-- Media type (print) doesn't match the current environment, so browser decides it's not that important and loads the stylesheet asynchronously (without delaying page rendering). On load, we change media type so that the stylesheet gets applied to screens. -->
     <link rel="stylesheet" href="../scss/styles.scss" media="print" onload="this.media='all'">
 
