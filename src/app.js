@@ -1,9 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// hide body initially
-document.body.classList.add('hidden');
-
 
 // jaula animation
 // ---------------
@@ -56,14 +53,15 @@ document.addEventListener('DOMContentLoaded', function () {
 window.onload = (event) => {
 
     // unhide on window load
-    document.body.classList.remove('hidden');
-
+    document.querySelector('main').classList.remove('hideonload');
+    document.querySelector('footer').classList.remove('hideonload');
+    
     // AOS load
     setTimeout(() => {
         AOS.init({
             duration: 500,
             // once: true
         });
-    }, 100);
+    }, 10);
 
 };
